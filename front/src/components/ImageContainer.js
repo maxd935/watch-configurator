@@ -3,7 +3,7 @@ import placeholderImage from "../images/image-placeholder.jpg";
 const ImageContainer = () => {
   return (
     <div>
-      <img src="placeholderImage" />
+      <img src={placeholderImage} />
     </div>
   );
 };
