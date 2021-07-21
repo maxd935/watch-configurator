@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ImageContainer from "./ImageContainer";
 import OptionsList from "./OptionsList";
 
 const Configurator = () => {
@@ -8,6 +9,7 @@ const Configurator = () => {
   });
   return (
     <>
+      <ImageContainer />
       <OptionsList />
     </>
   );
