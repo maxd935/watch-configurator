@@ -3,7 +3,7 @@
 
 ### json example
 
-```json
+```
 {
 	type: "watch",
 	collection: ["Steel", "Gold"]
