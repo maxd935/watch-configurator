@@ -1,7 +1,20 @@
 {
   "collection": { "options": ["steel", "gold"], "selected": 0 },
   "dial": {
-    "options": ["red", "brown", "yellow", "purple"],
+    "options": [
+      "black",
+      "white",
+      "gray",
+      "green",
+      "kaki",
+      "light-blue",
+      "military",
+      "dark-blue",
+      "dark-red",
+      "orange",
+      "pink",
+      "purple"
+    ],
     "selected": 0
   },
   "size": { "options": ["sm", "xl"], "selected": 0 },

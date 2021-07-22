@@ -1,16 +1,15 @@
-import { useContext } from "react";
-import { ImageContext } from "../context/imageContext";
+import { useContext, useEffect, useState } from "react";
 import {
   dials,
   housingNeedles,
-  strapLeather,
-  strapRubber,
+  straps
 } from "../constants/images";
+import { ConfiguratorContext } from "../context/configuratorContext";
 import ExtractContext from "../utils/extractContext";
 
-export default function ImageContainer() {
-  const [imageContext, _] = useContext(ImageContext);
-  console.log(ExtractContext());
+const ImageContainer = ({images}) => {
+  const [context,setContext] = useContext(ConfiguratorContext)
+  console.log(images)
   return (
     <div className="flex" style={{ maxWidth: "38%" }}>
       <div
@@ -22,8 +21,9 @@ export default function ImageContainer() {
           maxHeight: "600px",
         }}
       >
+        {/* {console.log(images)} */}
         <img
-          src={housingNeedles["housingSteel"]}
+          src={housingNeedles[images.housingName]}
           style={{
             position: "relative",
             top: "0px",
@@ -33,7 +33,7 @@ export default function ImageContainer() {
           }}
         />
         <img
-          src={dials["dialGreen"]}
+          src={dials[images.dialName]}
           style={{
             position: "absolute",
             top: "0px",
@@ -43,7 +43,7 @@ export default function ImageContainer() {
           }}
         />
         <img
-          src={strapLeather["strapLeatherBlack"]}
+          src={straps[images.strapName]}
           style={{
             position: "absolute",
             top: "0px",
@@ -53,7 +53,17 @@ export default function ImageContainer() {
           }}
         />
         <img
-          src={strapLeather["buckleLeatherGold"]}
+          src={straps[images.buckleName]}
+          style={{
+            position: "absolute",
+            top: "0px",
+            left: "0px",
+            zIndex: "4",
+            maxHeight: "100%",
+          }}
+        />
+        <img
+          src={housingNeedles[images.needleName]}
           style={{
             position: "absolute",
             top: "0px",
@@ -66,4 +76,6 @@ export default function ImageContainer() {
       </div>
     </div>
   );
-}
+};
+
+export default ImageContainer;

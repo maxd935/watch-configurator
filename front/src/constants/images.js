@@ -1,7 +1,7 @@
 import dialBlackSteel from "../images/watches/dials/dial-black-steel.png";
 import dialBlackGold from "../images/watches/dials/dial-black-gold.png";
-import dialWhiteSteel from "../images/watches/dials/dial-black-steel.png";
-import dialWhiteGold from "../images/watches/dials/dial-black-gold.png";
+import dialWhiteSteel from "../images/watches/dials/dial-white-steel.png";
+import dialWhiteGold from "../images/watches/dials/dial-white-gold.png";
 import dialDarkBlue from "../images/watches/dials/dial-dark-blue.png";
 import dialDarkRed from "../images/watches/dials/dial-dark-red.png";
 import dialGray from "../images/watches/dials/dial-gray.png";
@@ -68,7 +68,7 @@ let dials = {
 
 let housingNeedles = { housingGold, housingSteel, needleGold, needleSteel };
 
-let strapLeather = {
+let straps = {
   buckleLeatherGold,
   buckleLeatherSteel,
   strapLeatherBlack,
@@ -81,9 +81,6 @@ let strapLeather = {
   strapLeatherPurple,
   strapLeatherRed,
   strapLeatherWhite,
-};
-
-let strapRubber = {
   buckleRubberLargeGold,
   buckleRubberLargeSteel,
   strapRubberLargeBlack,
@@ -106,4 +103,4 @@ let strapRubber = {
   strapRubberThinWhite,
 };
 
-export { dials, housingNeedles, strapLeather, strapRubber };
+export { dials, housingNeedles, straps };

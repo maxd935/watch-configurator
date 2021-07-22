@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { ConfiguratorContext } from "../context/configuratorContext";
+import { format } from "./general";
 
-export default function ExtractContext() {
-  const [context, _] = useContext(ConfiguratorContext);
+export default function ExtractContext(context) {
   let collection = context?.collection?.options[context?.collection?.selected];
   let dial = context?.dial?.options[context?.dial?.selected];
   let material = context?.strap?.options[context?.strap?.selected].material;
@@ -15,12 +15,32 @@ export default function ExtractContext() {
     context?.strap?.options[context?.strap?.selected].color?.options[
       context?.strap?.options[context?.strap?.selected].color?.selected
     ];
-  //   let housingName;
-  //   let buckleName;
-  //   let dial;
-  //   let needles;
+  let housingName;
+  let needleName;
+  let buckleName;
+  let dialName;
+  let strapName;
 
+  housingName = "housing" + format(collection);
+  needleName = "needle" + format(collection);
+  buckleName =
+    "buckle" +
+    format(material) +
+    (material == "rubber" ? format(style) : "" + format(color));
+  console.log("buckle", buckleName);
+  dialName =
+    "dial" +
+    format(dial) +
+    ((collection == "gold" || collection == "steel") &&
+    (dial == "black" || dial == "white")
+      ? format(collection)
+      : "");
+  strapName =
+    "strap" +
+    format(material) +
+    (material == "rubber" ? format(style) : "") +
+    format(color);
   //   let output = {housing}
 
-  return { collection, dial, material, size, style, color };
+  return { housingName, needleName, buckleName, dialName, strapName };
 }
