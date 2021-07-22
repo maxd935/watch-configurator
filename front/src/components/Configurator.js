@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import ImageContainer from "./ImageContainer";
 import OptionsList from "./OptionsList";
 import dataJson from "../options.json";
+import { ConfiguratorContext } from "../context/configuratorContext";
 
 const Configurator = () => {
-  const [data, setData] = useState({});
-  
+  const [context, setContext] = useContext(ConfiguratorContext);
+
   useEffect(() => {
-    // console.log("setdata with",dataJson)
-    // setData(dataJson);
+    // setContext(dataJson);
   }, []);
   return (
     <div className="h-screen flex justify-center items-center">
       <ImageContainer />
-      <OptionsList data={dataJson} />
+      <OptionsList />
     </div>
   );
 };
