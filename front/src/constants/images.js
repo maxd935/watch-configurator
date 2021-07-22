@@ -29,7 +29,7 @@ import strapLeatherPurple from "../images/watches/strap-leather/strap-leather-pu
 import strapLeatherRed from "../images/watches/strap-leather/strap-leather-red.png";
 import strapLeatherWhite from "../images/watches/strap-leather/strap-leather-white.png";
 import buckleRubberLargeGold from "../images/watches/strap-rubber-large/buckle-rubber-large-gold.png";
-import buckleRubberLargeSteel from "../images/watches/strap-rubber-large/buckle-rubber-large-gold.png";
+import buckleRubberLargeSteel from "../images/watches/strap-rubber-large/buckle-rubber-large-steel.png";
 import strapRubberLargeBlack from "../images/watches/strap-rubber-large/strap-rubber-large-black.png";
 import strapRubberLargeBrown from "../images/watches/strap-rubber-large/strap-rubber-large-brown.png";
 import strapRubberLargeDarkBlue from "../images/watches/strap-rubber-large/strap-rubber-large-dark-blue.png";

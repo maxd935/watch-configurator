@@ -26,7 +26,8 @@ export default function ExtractContext(context) {
   buckleName =
     "buckle" +
     format(material) +
-    (material == "rubber" ? format(style) : "" + format(color));
+    (material == "rubber" ? format(style) : "") +
+    format(collection);
   console.log("buckle", buckleName);
   dialName =
     "dial" +
