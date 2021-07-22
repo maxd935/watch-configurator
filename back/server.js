@@ -5,6 +5,7 @@ const path = require('path');
 const buildPath = path.join(__dirname, '..', 'build');
 
 var app = express();
+console.log("test")
 
 app
 	.get('/watch_options', (req,res) => {
