@@ -11,7 +11,14 @@ import {
 export default function ImageContainer() {
   const [imageContext, _] = useContext(ImageContext);
   return (
-    <div>
+    <div
+      style={{
+        display: "inline-block",
+        position: "relative",
+        top: "0",
+        left: "0",
+      }}
+    >
       {/* <img src={placeholderImage} /> */}
       {/* {imageContext.map((i) => {
         return (
@@ -20,8 +27,22 @@ export default function ImageContainer() {
           </div>
         );
       })} */}
-      <img src={housingNeedles["housingSteel"]} />
-      <img src={housingNeedles["needleSteel"]} />
+      <img
+        src={housingNeedles["housingSteel"]}
+        style={{ position: "relative", top: "0px", left: "0px", zIndex: "1" }}
+      />
+      <img
+        src={dials["dialGreen"]}
+        style={{ position: "absolute", top: "0px", left: "0px", zIndex: "2" }}
+      />
+      <img
+        src={strapLeather["strapLeatherBlack"]}
+        style={{ position: "absolute", top: "0px", left: "0px", zIndex: "3" }}
+      />
+      <img
+        src={strapLeather["buckleLeatherGold"]}
+        style={{ position: "absolute", top: "0px", left: "0px", zIndex: "4" }}
+      />
       {/* <img src={housingNeedles["housingSteel"]} /> */}
     </div>
   );
