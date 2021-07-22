@@ -1,0 +1,15 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "watch-configurator",
+  "main": "server.js",
+  "repository": "https://github.com/jrivo/watch-configurator",
+  "author": "Groupe1-ESGI-4IWJ",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
