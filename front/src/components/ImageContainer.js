@@ -4,12 +4,13 @@ import {
   dials,
   housingNeedles,
   strapLeather,
-  strapRubberLarge,
-  strapRubberThin,
+  strapRubber,
 } from "../constants/images";
+import ExtractContext from "../utils/extractContext";
 
 export default function ImageContainer() {
   const [imageContext, _] = useContext(ImageContext);
+  console.log(ExtractContext());
   return (
     <div className="flex" style={{ maxWidth: "38%" }}>
       <div
