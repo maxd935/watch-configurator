@@ -15,7 +15,14 @@ const Configurator = () => {
     setContext(dataJson);
   }, []);
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
       <ImageContext.Provider value={[imageContext, setImageContext]}>
         <ImageContainer />
       </ImageContext.Provider>
