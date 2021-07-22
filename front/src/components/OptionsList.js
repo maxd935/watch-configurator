@@ -49,13 +49,14 @@ export default function OptionsList() {
         <div className="flex">
           <form className="flex">
             {context?.strap?.options.map((c, index) => {
+              const checked = IsChecked("strap", index);
+              console.log("checked: " +checked);
               return (
                 <OptionsItem
                   name={c.material}
                   category={"strap"}
                   itemIndex={index}
-                  strap={c}
-                  checked={IsChecked("strap", index)}
+                  checked={checked}
                 />
               );
             })}

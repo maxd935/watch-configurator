@@ -1,13 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ConfiguratorContext } from "../context/configuratorContext";
 
-export default function OptionsItem({
-  name,
-  category,
-  itemIndex,
-  strap,
-  checked,
-}) {
+export default function OptionsItem({ name, category, itemIndex, checked }) {
   const [context, setContext] = useContext(ConfiguratorContext);
   const updateChoices = () => {
     let newContext = {};
@@ -16,7 +10,7 @@ export default function OptionsItem({
       newContext[category[0]].options[context[category[0]].selected][
         category[1]
       ].selected = itemIndex;
-      console.log(newContext)
+      newContext = {...newContext}
     } else {
       newContext = {
         ...context,
@@ -26,9 +20,9 @@ export default function OptionsItem({
         },
       };
     }
-    // console.log(newContext);
     setContext(newContext);
   };
+
   return (
     <div key={name} className="px-2">
       <label>{name}</label>
