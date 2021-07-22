@@ -10,7 +10,7 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./back/server.js",
 		"build": "cd front/ && npm install && npm run build"
   },
   "engines": {
