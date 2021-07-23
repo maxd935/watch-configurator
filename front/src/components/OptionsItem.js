@@ -48,7 +48,7 @@ export default function OptionsItem({ name, category, itemIndex, checked }) {
           />
           <img className="selected-icon" alt="" src={tick} />
         </div>
-        <span className="item-radio-label">{name}</span>
+        {/* <span className="item-radio-label">{name}</span> */}
       </label>
     </>
   );
