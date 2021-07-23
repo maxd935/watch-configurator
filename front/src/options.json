@@ -1,0 +1,62 @@
+{
+  "collection": { "options": ["steel", "gold"], "selected": 0 },
+  "dial": {
+    "options": [
+      "black",
+      "white",
+      "gray",
+      "green",
+      "kaki",
+      "light-blue",
+      "military",
+      "dark-blue",
+      "dark-red",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "selected": 0
+  },
+  "size": { "options": ["sm", "xl"], "selected": 0 },
+  "strap": {
+    "options": [
+      {
+        "material": "leather",
+        "style": { "options": ["thin"], "selected": 0 },
+        "color": {
+          "options": [
+            "purple",
+            "green",
+            "red",
+            "pink",
+            "brown",
+            "blue",
+            "gray",
+            "dark-blue",
+            "white",
+            "black"
+          ],
+          "selected": 0
+        }
+      },
+      {
+        "material": "rubber",
+        "style": { "options": ["thin", "large"], "selected": 0 },
+        "color": {
+          "options": [
+            "dark-blue",
+            "white",
+            "black",
+            "orange",
+            "red",
+            "gray",
+            "kaki",
+            "brown"
+          ],
+          "selected": 0
+        }
+      }
+    ],
+    "selected": 0
+  }
+}
