@@ -14,17 +14,19 @@ export default function OptionsList() {
         </label>
         <div className="flex tab-content">
           <form className="flex">
-            {context?.collection?.options?.map((c, index) => {
-              // console.log("index",index)
-              return (
-                <OptionsItem
-                  name={c}
-                  category="collection"
-                  itemIndex={index}
-                  checked={IsChecked("collection", index)}
-                />
-              );
-            })}
+            <div class="feedbackButtons">
+              {context?.collection?.options?.map((c, index) => {
+                // console.log("index",index)
+                return (
+                  <OptionsItem
+                    name={c}
+                    category="collection"
+                    itemIndex={index}
+                    checked={IsChecked("collection", index)}
+                  />
+                );
+              })}
+            </div>
           </form>
         </div>
       </div>
