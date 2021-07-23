@@ -1,7 +1,7 @@
 import dialBlackSteel from "../images/watches/dials/dial-black-steel.png";
 import dialBlackGold from "../images/watches/dials/dial-black-gold.png";
-import dialWhiteSteel from "../images/watches/dials/dial-black-steel.png";
-import dialWhiteGold from "../images/watches/dials/dial-black-gold.png";
+import dialWhiteSteel from "../images/watches/dials/dial-white-steel.png";
+import dialWhiteGold from "../images/watches/dials/dial-white-gold.png";
 import dialDarkBlue from "../images/watches/dials/dial-dark-blue.png";
 import dialDarkRed from "../images/watches/dials/dial-dark-red.png";
 import dialGray from "../images/watches/dials/dial-gray.png";
@@ -29,7 +29,7 @@ import strapLeatherPurple from "../images/watches/strap-leather/strap-leather-pu
 import strapLeatherRed from "../images/watches/strap-leather/strap-leather-red.png";
 import strapLeatherWhite from "../images/watches/strap-leather/strap-leather-white.png";
 import buckleRubberLargeGold from "../images/watches/strap-rubber-large/buckle-rubber-large-gold.png";
-import buckleRubberLargeSteel from "../images/watches/strap-rubber-large/buckle-rubber-large-gold.png";
+import buckleRubberLargeSteel from "../images/watches/strap-rubber-large/buckle-rubber-large-steel.png";
 import strapRubberLargeBlack from "../images/watches/strap-rubber-large/strap-rubber-large-black.png";
 import strapRubberLargeBrown from "../images/watches/strap-rubber-large/strap-rubber-large-brown.png";
 import strapRubberLargeDarkBlue from "../images/watches/strap-rubber-large/strap-rubber-large-dark-blue.png";
@@ -48,8 +48,6 @@ import strapRubberThinKaki from "../images/watches/strap-rubber-thin/strap-rubbe
 import strapRubberThinOrange from "../images/watches/strap-rubber-thin/strap-rubber-thin-orange.png";
 import strapRubberThinRed from "../images/watches/strap-rubber-thin/strap-rubber-thin-red.png";
 import strapRubberThinWhite from "../images/watches/strap-rubber-thin/strap-rubber-thin-white.png";
-
-
 
 let dials = {
   dialGray,
@@ -70,7 +68,7 @@ let dials = {
 
 let housingNeedles = { housingGold, housingSteel, needleGold, needleSteel };
 
-let strapLeather = {
+let straps = {
   buckleLeatherGold,
   buckleLeatherSteel,
   strapLeatherBlack,
@@ -83,9 +81,6 @@ let strapLeather = {
   strapLeatherPurple,
   strapLeatherRed,
   strapLeatherWhite,
-};
-
-let strapRubberLarge = {
   buckleRubberLargeGold,
   buckleRubberLargeSteel,
   strapRubberLargeBlack,
@@ -96,19 +91,16 @@ let strapRubberLarge = {
   strapRubberLargeOrange,
   strapRubberLargeRed,
   strapRubberLargeWhite,
+  buckleRubberThinGold,
+  buckleRubberThinSteel,
+  strapRubberThinBlack,
+  strapRubberThinBrown,
+  strapRubberThinDarkBlue,
+  strapRubberThinGray,
+  strapRubberThinKaki,
+  strapRubberThinOrange,
+  strapRubberThinRed,
+  strapRubberThinWhite,
 };
 
-let strapRubberThin = {
-    buckleRubberThinGold,
-    buckleRubberThinSteel,
-    strapRubberThinBlack,
-    strapRubberThinBrown,
-    strapRubberThinDarkBlue,
-    strapRubberThinGray,
-    strapRubberThinKaki,
-    strapRubberThinOrange,
-    strapRubberThinRed,
-    strapRubberThinWhite,
-  };
-
-export { dials, housingNeedles, strapLeather,strapRubberLarge,strapRubberThin };
+export { dials, housingNeedles, straps };
