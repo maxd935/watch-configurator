@@ -48,6 +48,8 @@ import strapRubberThinKaki from "../images/watches/strap-rubber-thin/strap-rubbe
 import strapRubberThinOrange from "../images/watches/strap-rubber-thin/strap-rubber-thin-orange.png";
 import strapRubberThinRed from "../images/watches/strap-rubber-thin/strap-rubber-thin-red.png";
 import strapRubberThinWhite from "../images/watches/strap-rubber-thin/strap-rubber-thin-white.png";
+import SM from "../images/watches/other/s-m.png";
+import XL from "../images/watches/other/l-xl.png";
 
 let dials = {
   dialGray,
@@ -103,4 +105,6 @@ let straps = {
   strapRubberThinWhite,
 };
 
-export { dials, housingNeedles, straps };
+let sizes = { SM, XL };
+
+export { dials, housingNeedles, straps, sizes };

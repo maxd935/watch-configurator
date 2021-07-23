@@ -9,7 +9,6 @@ import ExtractContext from "../utils/extractContext";
 
 const ImageContainer = ({images}) => {
   const [context,setContext] = useContext(ConfiguratorContext)
-  console.log(images)
   return (
     <div className="flex" style={{ maxWidth: "38%" }}>
       <div

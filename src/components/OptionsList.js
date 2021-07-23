@@ -17,7 +17,6 @@ export default function OptionsList() {
           <form className="flex">
             <div class="feedbackButtons">
               {context?.collection?.options?.map((c, index) => {
-                // console.log("index",index)
                 return (
                   <OptionsItem
                     name={c}
