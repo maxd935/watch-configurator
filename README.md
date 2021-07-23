@@ -1,3 +1,6 @@
+
+# watch-configurator
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +71,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### json example
+
+```
+{
+	type: "watch",
+	collection: ["Steel", "Gold"]
+	dial: ["black", "white", "green"]
+	strap: [
+			{
+				material: "rubber_strap",
+				style: "thin" || "large",
+				color: "black" || "white" || "green",
+			},
+			{
+				material: "leather_strap"
+				style: "thin" //always thin
+				color: "black" || "white" || "green"
+			}
+		]
+	length: ["S-M", "L-XL"]
+}
+```
