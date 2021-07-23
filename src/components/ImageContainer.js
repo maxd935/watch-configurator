@@ -9,7 +9,6 @@ import ExtractContext from "../utils/extractContext";
 
 const ImageContainer = ({images}) => {
   const [context,setContext] = useContext(ConfiguratorContext)
-  console.log(images)
   return (
     <div className="flex" style={{ maxWidth: "38%" }}>
       <div
@@ -18,7 +17,7 @@ const ImageContainer = ({images}) => {
           position: "relative",
           top: "0",
           left: "0",
-          maxHeight: "600px",
+          maxHeight: "400px",
         }}
       >
         {/* {console.log(images)} */}
@@ -26,46 +25,56 @@ const ImageContainer = ({images}) => {
           src={housingNeedles[images.housingName]}
           style={{
             position: "relative",
+              height : "400px",
+              width : "400px",
             top: "0px",
             left: "0px",
             zIndex: "1",
-            maxHeight: "100%",
+              maxHeight: "100%",
           }}
         />
         <img
           src={dials[images.dialName]}
           style={{
             position: "absolute",
+              height : "400px",
+              width : "400px",
             top: "0px",
             left: "0px",
             zIndex: "2",
-            maxHeight: "100%",
+              maxHeight: "100%",
           }}
         />
         <img
           src={straps[images.strapName]}
           style={{
             position: "absolute",
+              height : "400px",
+              width : "400px",
             top: "0px",
             left: "0px",
             zIndex: "3",
-            maxHeight: "100%",
+              maxHeight: "100%",
           }}
         />
         <img
           src={straps[images.buckleName]}
           style={{
             position: "absolute",
+              height : "400px",
+              width : "400px",
             top: "0px",
             left: "0px",
             zIndex: "4",
-            maxHeight: "100%",
+              maxHeight: "100%",
           }}
         />
         <img
           src={housingNeedles[images.needleName]}
           style={{
             position: "absolute",
+              height : "400px",
+              width : "400px",
             top: "0px",
             left: "0px",
             zIndex: "4",
