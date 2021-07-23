@@ -107,8 +107,9 @@ export default function OptionsItem({ name, category, itemIndex, checked }) {
               dials[
                 "dial" +
                   format(context?.dial?.options[itemIndex]) +
-                  format(context?.collection?.options[itemIndex])
+                  format(context?.collection?.options[context?.collection?.selected])
               ];
+              console.log(object)
           } else {
             object = dials["dial" + format(context?.dial?.options[itemIndex])];
           }
